@@ -1,0 +1,8 @@
+<!-- Config file for the game -->
+
+<save_load_config>
+
+  <loadpos posX="0" posY="0" ></loadpos>
+  <savepos posX="0" posY="0" ></savepos>
+
+</save_load_config>
