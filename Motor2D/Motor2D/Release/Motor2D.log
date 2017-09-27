@@ -1,0 +1,16 @@
+﻿  j1Main.cpp
+  j1App.cpp
+  j1Audio.cpp
+  j1Input.cpp
+  j1Scene.cpp
+  p2Log.cpp
+  j1Render.cpp
+  j1Textures.cpp
+  j1Window.cpp
+  pugixml.cpp
+  Generating code
+c:\users\sergiosc5\desktop\motor2d\motor2d\j1app.cpp(350): warning C4715: 'j1App::DocSave': not all control paths return a value
+c:\users\sergiosc5\desktop\motor2d\motor2d\j1app.cpp(317): warning C4715: 'j1App::DocLoad': not all control paths return a value
+  All 288 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Motor2D.vcxproj -> C:\Users\sergiosc5\Desktop\Motor2D\Release\Motor 2D.exe
