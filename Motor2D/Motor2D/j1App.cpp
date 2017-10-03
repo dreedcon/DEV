@@ -11,6 +11,7 @@
 #include "j1Audio.h"
 #include "j1Scene.h"
 #include "j1App.h"
+#include "j1Map.h"
 
 // Constructor
 j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
@@ -23,6 +24,7 @@ j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 	tex = new j1Textures();
 	audio = new j1Audio();
 	scene = new j1Scene();
+	map = new j1Map();
 
 	// Ordered for awake / Start / Update
 	// Reverse order of CleanUp
@@ -30,6 +32,7 @@ j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 	AddModule(win);
 	AddModule(tex);
 	AddModule(audio);
+	AddModule(map);
 	AddModule(scene);
 
 	// render last to swap buffer
@@ -285,7 +288,7 @@ void j1App::Save()const
 
 }
 
-// TODO 3: Create a simulation of the xml file to read 
+
 bool j1App::DocLoad()
 {
 	bool ret = true;
@@ -315,10 +318,7 @@ bool j1App::DocLoad()
 	}
 
 }
-// TODO 4: Create a method to actually load an xml file
-// then call all the modules to load themselves
 
-// TODO 7: Create a method to save the current state
 bool j1App::DocSave() const
 {
 	bool ret = true;
